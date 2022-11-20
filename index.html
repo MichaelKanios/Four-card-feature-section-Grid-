@@ -1,44 +1,101 @@
-<!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <link rel="stylesheet" href="style.css">
-    <meta charset="utf-8">
-    <title></title>
-  </head>
-  <body>
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
 
-    <div class="header">
-      <h2 class="top">Reliable, efficient delivery</h2>
-      <h2 class="middle">Powered by Technology</h2>
-      <p>Our Artificial Intelligence powered tools use millions of project data points
-        to ensure that your project is successful</p>
-    </div>
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body{
+  font-family: 'Poppins', sans-serif;
+  font-size: 13px;
+}
+.header{
+  max-width: 1250px;
+  width:100%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 10px;
 
-<div class="container">
-  <div class="box one"> <h3>Supervisor</h3>
-  <p>Monitors activity to identify project roadblocks</p>
-  <img src="images/icon-supervisor.svg" alt="supervisor"></div>
+}
+.header .top{
+  font-weight: 200px;
+  color:  hsl(229, 6%, 66%) ;
+}
+.header p{
+  color:  hsl(229, 6%, 66%) ;
+}
+.container{
+  width:100%;
+  max-width: 1250px;
+  display: grid;
+  grid-template-columns: 300px 300px 300px;
+  grid-template-rows: 200px 200px;
+  justify-content: center;
+  gap:10px;
+  grid-auto-flow:column;
+  margin-top: 20px;
+  margin-left: 30px;
+}
 
-  <div class="box two">
-    <h3>Team Builder</h3>
-    <p>Scans our talent network to create the optimal team for your project</p>
-    <img src="images/icon-team-builder.svg" alt="builder">
-  </div>
+.box{
+  text-align: center;
+  align-items: center;
+  width:300px;
+  height: 200px;
+  box-shadow: 10px 10px 25px 8px grey;
+  border-radius: 5px;
+  text-align: left;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
 
-  <div class="box three"><h3>Karma</h3>
-  <p>Regularly evaluates our talent to ensure quality</p>
-  <img src="images/icon-karma.svg" alt="karma"></div>
+.one{
+ background-color: hsl(0, 0%, 98%);
+ grid-row-start: span 2;
+ align-self: center;
+ border-top:3px solid hsl(180, 62%, 55%);
 
-  <div class="box four"><h3>Calculator</h3>
-  <p>Uses data from past projects to provide better delivery estimates</p>
-  <img src="images/icon-calculator.svg" alt="calculator"></div>
+}
 
-</div>
-<footer>
-  <p class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-    Coded by <a href="#">Michael Kanios</a>.
-  </p>
-</footer>
-  </body>
-</html>
+.two{
+  background-color: hsl(0, 0%, 98%);
+  align-self: center;
+  border-top:3px solid hsl(0, 78%, 62%);
+
+}
+.two img ,.one img,.three img,.four img{
+ width:50px;
+ display:block;
+ margin-left: auto;
+ margin-top: 30px;
+ margin-right: 20px;
+}
+.three{
+  background-color: hsl(0, 0%, 98%);
+  align-self: center;
+/*grid-row-start: span 2;*/
+border-top:3px solid  hsl(34, 97%, 64%);
+
+}
+.four{
+  background-color: hsl(0, 0%, 98%);
+  align-self: center;
+  grid-row-start: span 2;
+  border-top:3px solid hsl(212, 86%, 64%);
+
+}
+
+.container h3,.container p{
+  padding-left: 20px;
+  padding-top: 10px;
+}
+.box p{
+  color:  hsl(229, 6%, 66%) ;
+  font-weight: 600px;
+}
+footer{
+  margin-top: 50px;
+  text-align: center;
+  font-size: 11px;
+}
