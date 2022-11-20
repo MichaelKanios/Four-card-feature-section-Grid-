@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
-/**/
+
 *{
   padding: 0;
   margin: 0;
@@ -7,14 +7,17 @@
 }
 body{
   font-family: 'Poppins', sans-serif;
-  font-size: 15px;
+  font-size: 13px;
 }
 .header{
+  max-width: 1250px;
+  width:100%;
   text-align: center;
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin:0px 400px;
+  margin-top: 10px;
+
 }
 .header .top{
   font-weight: 200px;
@@ -30,7 +33,7 @@ body{
   grid-template-columns: 300px 300px 300px;
   grid-template-rows: 200px 200px;
   justify-content: center;
-  gap:15px;
+  gap:10px;
   grid-auto-flow:column;
   margin-top: 20px;
   margin-left: 30px;
@@ -44,6 +47,7 @@ body{
   box-shadow: 10px 10px 25px 8px grey;
   border-radius: 5px;
   text-align: left;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
 .one{
@@ -51,14 +55,14 @@ body{
  grid-row-start: span 2;
  align-self: center;
  border-top:3px solid hsl(180, 62%, 55%);
- box-shadow: 20px 20px 50px 15px grey;
+
 }
 
 .two{
   background-color: hsl(0, 0%, 98%);
   align-self: center;
   border-top:3px solid hsl(0, 78%, 62%);
-  box-shadow: 20px 20px 50px 15px grey;
+
 }
 .two img ,.one img,.three img,.four img{
  width:50px;
@@ -72,14 +76,14 @@ body{
   align-self: center;
 /*grid-row-start: span 2;*/
 border-top:3px solid  hsl(34, 97%, 64%);
-box-shadow: 20px 20px 50px 15px grey;
+
 }
 .four{
   background-color: hsl(0, 0%, 98%);
   align-self: center;
   grid-row-start: span 2;
   border-top:3px solid hsl(212, 86%, 64%);
-  box-shadow: 20px 20px 50px 15px grey;
+
 }
 
 .container h3,.container p{
@@ -91,5 +95,7 @@ box-shadow: 20px 20px 50px 15px grey;
   font-weight: 600px;
 }
 footer{
+  margin-top: 50px;
   text-align: center;
+  font-size: 11px;
 }
